@@ -16,4 +16,3 @@ func foo(w http.ResponseWriter, req *http.Request){
 }
 
 //localhost:8080/?q=dog
-//reg
