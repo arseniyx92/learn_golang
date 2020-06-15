@@ -29,3 +29,11 @@ Created ```func alreadyLoggedIn``` and put it on the session.go page. This refac
 func alreadyLoggedIn(req *http.Request) bool
 ```
 
+# TO RUN
+You have to write:
+
+`go run *.go`
+
+or
+
+`go build` or `go install`
