@@ -121,7 +121,7 @@ func index(w http.ResponseWriter, req *http.Request) {
 	if err == http.ErrNoCookie {
 	} else if _, ok := dbSession[c.Value]; !ok {
 	} else {
-		feed.User = c.Value
+		feed.User = dbSession[c.Value]
 	}
 	c = &http.Cookie{
 		Name:  "feed",

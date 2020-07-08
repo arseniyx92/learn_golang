@@ -19,14 +19,22 @@ body{
 main{
     width: 90%;
     margin: auto;
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
 }
 
 .comment{
+    font-size: calc(1.6rem + 2vw);
     color: white;
+
 }
 
-.hi{
-    text-align: center;
+.feed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 img{

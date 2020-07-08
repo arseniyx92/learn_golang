@@ -1,13 +1,14 @@
 {{template "header" .User}}
 
+<div class="feed">
+
 {{if .User}}
-<h1 class="hi"> <p class="comment">Hi</p> {{index . 0}}<p class="comment">!</p></h1>
+    <p class="comment">Hi {{.User}}!</p>
 {{end}}
 
 {{range .Pics}}
     <img src="/public/pics/{{.}}">
 {{end}}
 
-
-
+</div>
 {{template "footer"}}
