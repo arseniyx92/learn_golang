@@ -1,5 +1,13 @@
-{{template "header"}}
+{{template "header" .User}}
 
-<h1> Hi {{.}} </h1>
+{{if .User}}
+<h1 class="hi"> <p class="comment">Hi</p> {{index . 0}}<p class="comment">!</p></h1>
+{{end}}
+
+{{range .Pics}}
+    <img src="/public/pics/{{.}}">
+{{end}}
+
+
 
 {{template "footer"}}
